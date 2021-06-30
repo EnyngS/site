@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design {
-  background: url(/img/layer-45.png) center/cover no-repeat;
+  background: url('https://enyngs.github.io/site/img/layer-45.png') center/cover no-repeat;
   margin-bottom: 90px;
   position: relative;
   height: 850px;
@@ -711,7 +711,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 22px;
   bottom: 51%;
   left: 0;
-  background: url(/img/arrow-down-copy-2.png) center no-repeat;
+  background: url('https://enyngs.github.io/site/img/arrow-down-copy-2.png') center no-repeat;
   position: absolute;
   -webkit-box-ordinal-group: 16;
   -webkit-order: 15;
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 22px;
   bottom: 54%;
   right: 0;
-  background: url(/img/arrow-down-copy.png) center no-repeat;
+  background: url('https://enyngs.github.io/site/img/arrow-down-copy.png') center no-repeat;
   position: absolute;
   -webkit-box-ordinal-group: 16;
   -webkit-order: 15;
@@ -945,7 +945,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -webkit-calc(50% + 65px);
   bottom: calc(50% + 65px);
   left: 0;
-  background: url(/img/arrow-down-copy-2.png) center no-repeat;
+  background: url('https://enyngs.github.io/site/img/arrow-down-copy-2.png') center no-repeat;
   position: absolute;
   -webkit-box-ordinal-group: 16;
   -webkit-order: 15;
@@ -960,7 +960,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -webkit-calc(52% + 65px);
   bottom: calc(52% + 65px);
   right: 0;
-  background: url(/img/arrow-down-copy.png) center no-repeat;
+  background: url('https://enyngs.github.io/site/img/arrow-down-copy.png') center no-repeat;
   position: absolute;
   -webkit-box-ordinal-group: 16;
   -webkit-order: 15;
@@ -1010,7 +1010,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3;
-  background: url(/img/layer-53.png) center/cover no-repeat;
+  background: url('https://enyngs.github.io/site/img/layer-53.png') center/cover no-repeat;
   position: relative;
 }
 
@@ -1231,7 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3;
-  background: url(/img/layer-59.png) center/cover no-repeat;
+  background: url('https://enyngs.github.io/site/img/layer-59.png') center/cover no-repeat;
   position: relative;
   padding: 87px 0 57px;
 }
