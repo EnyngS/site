@@ -21,17 +21,20 @@ $maxWidth: 1200;
 	@include Montserrat;
 }
 // Переменные для блока
+body {
+	height: 100%;
+}
 .container {
 	max-width: 1240px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
 .cont1 {
-	height: 100%;
+	min-height: 100vh;
 }
 
 .heads {
-	height: 100vh;
+	min-height: 100vh;
 	background: url(../img/layer-15.png) center/cover no-repeat;
 	position: relative;
 	order: 10;
@@ -132,7 +135,7 @@ $maxWidth: 1200;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
+	min-height: 100vh;
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -216,6 +219,7 @@ $maxWidth: 1200;
 		flex-grow: 1;
 		flex-direction: column;
 		justify-content: center;
+		flex: 1 0 auto;
 	}
 
 	&__title {
@@ -270,6 +274,7 @@ $maxWidth: 1200;
 		text-transform: uppercase;
 		font-weight: bold;
 		text-align: left;
+		padding-top: 30px;
 
 		span {
 			font-size: 24px;
@@ -697,41 +702,113 @@ $maxWidth: 1200;
 		padding: 25px 55px 25px 4px;
 	}
 }
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+	min-width: none;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+	position: absolute;
+	top: calc(50% - 15px);
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	width: 20px;
+	height: 30px;
+
+	left: 0;
+	background: url(../img/arrow-down-copy-2.png) 0 0 no-repeat;
+	position: absolute;
+	// order: 15;
+	font-size: 0;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	width: 20px;
+	height: 30px;
+
+	right: 0;
+	background: url(../img/arrow-down-copy.png) 0 0 no-repeat;
+	position: absolute;
+	// order: 15;
+	font-size: 0;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// flex-direction: row;
+}
+.slick-dots li {
+	display: block;
+	margin: 0 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button {
+	background-color: white;
+	border: 2px solid black;
+}
+/* Элемент точки */
+.slick-dots li button {
+	font-size: 0;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: black;
+}
+.slick-dots li.slick-active {
+	background-color: white;
+}
 .what {
 	&__slider {
 		padding: 80px 90px 114px;
-		display: flex;
-		align-items: center;
-		@media screen and (max-width: 780px) {
-			flex-direction: column;
-			padding: 10px 10px 15px;
-		}
-
 		position: relative;
-		&::before {
-			content: "";
-			width: 12px;
-			height: 22px;
-			bottom: 51%;
-			left: 0;
-			background: url(../img/arrow-down-copy-2.png) center no-repeat;
-			position: absolute;
-			order: 15;
-		}
-		&::after {
-			content: "";
-			width: 12px;
-			height: 22px;
-			bottom: 54%;
-			right: 0;
-			background: url(../img/arrow-down-copy.png) center no-repeat;
-			position: absolute;
-			order: 15;
-		}
+		min-width: none;
 		@media screen and (max-width: 780px) {
-			&::before,
-			&::after {
-				display: none;
+			padding: 10px 20px 15px;
+		}
+		&-item {
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 780px) {
+				flex-direction: column;
+				// padding: 10px 10px 15px;
 			}
 		}
 	}
@@ -950,9 +1027,20 @@ $maxWidth: 1200;
 .some {
 	&__q {
 		padding: 0 50px 130px 50px;
-		display: flex;
-		align-items: center;
+		// display: flex;
+		// align-items: center;
 		margin: 0 50px;
+		position: relative;
+		min-width: none;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			@media screen and (max-width: 780px) {
+				flex-direction: column;
+				// padding: 10px 10px 15px;
+			}
+		}
 		@media screen and (max-width: 780px) {
 			flex-direction: column;
 			padding: 10px 10px 15px;
@@ -960,37 +1048,39 @@ $maxWidth: 1200;
 		}
 
 		position: relative;
-		&::before {
-			content: "";
-			width: 12px;
-			height: 22px;
-			bottom: calc(50% + 65px);
-			left: 0;
-			background: url(../img/arrow-down-copy-2.png) center no-repeat;
-			position: absolute;
-			order: 15;
-		}
-		&::after {
-			content: "";
-			width: 12px;
-			height: 22px;
-			bottom: calc(52% + 65px);
-			right: 0;
-			background: url(../img/arrow-down-copy.png) center no-repeat;
-			position: absolute;
-			order: 15;
-		}
-		@media screen and (max-width: 780px) {
-			&::before,
-			&::after {
-				display: none;
-			}
-		}
+		// &::before {
+		// 	content: "";
+		// 	width: 12px;
+		// 	height: 22px;
+		// 	bottom: calc(50% + 65px);
+		// 	left: 0;
+		// 	background: url(../img/arrow-down-copy-2.png) center no-repeat;
+		// 	position: absolute;
+		// 	order: 15;
+		// }
+		// &::after {
+		// 	content: "";
+		// 	width: 12px;
+		// 	height: 22px;
+		// 	bottom: calc(52% + 65px);
+		// 	right: 0;
+		// 	background: url(../img/arrow-down-copy.png) center no-repeat;
+		// 	position: absolute;
+		// 	order: 15;
+		// }
+		// @media screen and (max-width: 780px) {
+		// 	&::before,
+		// 	&::after {
+		// 		display: none;
+		// 	}
+		// }
 	}
 
 	&__q-img {
 		img {
 			border-radius: 50%;
+			width: 210px;
+			height: 210px;
 		}
 	}
 
