@@ -10,7 +10,7 @@ $(document).ready(function () {
 			breakpoint: 780,
 			settings: {
 				dots: true,
-				adaptiveHeight: true,
+				// adaptiveHeight: true,
 				arrows: false
 			}
 		}]
@@ -22,7 +22,7 @@ $(document).ready(function () {
 			breakpoint: 780,
 			settings: {
 				dots: true,
-				adaptiveHeight: true,
+				// adaptiveHeight: true,
 				arrows: false
 			}
 		}]
