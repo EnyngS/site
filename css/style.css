@@ -507,6 +507,11 @@ body {
             justify-content: center;
     margin: 15px auto;
   }
+  .voice__img:hover {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
   .gift {
     display: -webkit-box;
     display: -webkit-flex;
